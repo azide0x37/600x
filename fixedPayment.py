@@ -1,6 +1,8 @@
+balance 3929
 annualInterestRate = 0.2
 monthlyInterestRate = annualInterestRate / 12
 lowPayment = 0
+
 newBalance = balance
 months = 0
 cycles = 0
