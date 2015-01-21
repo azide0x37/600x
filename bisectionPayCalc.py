@@ -1,8 +1,8 @@
 
-annualInterestRate = 0.18
+#annualInterestRate = 0.18
 monthlyInterestRate = annualInterestRate / 12
 lowPayment = 0
-balance = float(raw_input('enter a new balance: '))
+#balance = float(raw_input('enter a new balance: '))
 minPay = balance / 12
 maxPay = balance * ((1 + monthlyInterestRate)**12 / 12) 
 newBalance = balance
@@ -22,4 +22,4 @@ while found == False:
 		found = True
 	else:
 		maxPay = lowPayment
-	print "Lowest payment:", round(lowPayment,2)
+print "Lowest payment:", round(lowPayment,2)
