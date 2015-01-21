@@ -12,14 +12,9 @@ while newBalance > 0:
 	newBalance = balance
 	print "Cycle:", cycles
 	
-	for months in range(0,12):
-		newBalance = newBalance + (newBalance * monthlyInterestRate) - lowPayment
-		print "Month:", months, "new balance", round(newBalance, 2)
+	for months in range(1,13):
+		newBalance -= lowPayment
+		print "Month:", months, "New balance:", round(newBalance, 2)
 		months += 1
-	
-	print "Low payment:", lowPayment
-	months = 0
-	cycles += 1
-
-print "Lowest payment:", round(lowPayment, 2)
-
+		newBalance = newBalance + (newBalance * monthlyInterestRate)	
+	print "Lowest payment:", lowPayment
